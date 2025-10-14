@@ -1,0 +1,13 @@
+default:
+  container:
+    name: isa
+  command:
+  - cmd: exec
+    msg: Create kubernetes cluster.
+    data: bash /usr/local/configs/kube/create-cluster.sh
+  - cmd: exec
+    msg: Create pod in kubernetes.
+    data: bash /usr/local/configs/kube/launch-k8s-pod.sh
+  - cmd: exec
+    msg: Create service in kubernetes.
+    data: bash /usr/local/configs/kube/launch-k8s-service.sh
