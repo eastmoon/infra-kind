@@ -1,5 +1,6 @@
 # Project folder
 cache/
+infra/host
 **/__pycache__/
 
 # third-party library
