@@ -33,11 +33,16 @@ do dev --into
         + [create-cluster](./app/configs/kube/creaate-cluster.sh)，運用 Kind 建立叢集，並配合 isa 指令掛載網路以確保 kubectl 可正常運作
         + [launch-k8s-pod](./app/configs/kube/launch-k8s-pod.sh)，運用 kubectl 建立 Pod
         + [launch-k8s-service](./app/configs/kube/launch-k8s-service.sh)，運用 kubectl 建立 Service
++ ```bash check-kind-service.sh```，檢查服務啟動狀態
++ ```bash into-kind-service.sh```，進入啟動中的服務
+    - 使用 ```crictl pods``` 檢閱目前啟動 pod 列表
+    - 使用 ```crictl images``` 檢閱目前下載的映像檔列表
 
 ## 文獻
 
 + [Kubernetes in Docker](https://kind.sigs.k8s.io/)
     - [kindest/node](https://hub.docker.com/r/kindest/node/)
+    - [Initial - kind](https://kind.sigs.k8s.io/docs/design/initial/)
     - [Configuration - kind](https://kind.sigs.k8s.io/docs/user/configuration/)
     - [Ingress - kind](https://kind.sigs.k8s.io/docs/user/ingress/)
     - [LoadBalancer - kind](https://kind.sigs.k8s.io/docs/user/loadbalancer/)
